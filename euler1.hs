@@ -50,3 +50,12 @@ sum_multiplies alpha n =
 -- sum_three_five4 :: Integer -> Integer
 sum_three_five n = sum_multiplies 3 n + sum_multiplies 5 n - sum_multiplies (3*5) n
 
+--
+--
+--
+main :: IO ()
+main = do
+    let result = sum_three_five 1000
+    putStr "Multiples of 3 or 5 below 1000 are: "
+    putStrLn $ show result
+

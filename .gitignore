@@ -1,0 +1,7 @@
+.*.swp
+*.cmi
+*.cmo
+*.hi
+*.o
+euler1_hs
+euler1_ml
