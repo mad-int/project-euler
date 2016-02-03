@@ -10,7 +10,8 @@ OCaml Notes
 The OCaml-code is in the files with ending "ml".
 I use
 - OCaml version 4.02.3
-- utop version 1.18 with batteries included version 2.3
+- with Batteries included version 2.3
+- utop version 1.18
 
 You can load files in utop (the OCaml-shell) in the following way:
 ```
@@ -19,6 +20,17 @@ You can load files in utop (the OCaml-shell) in the following way:
 (with the hashmark).
 Afterwards the functions of the file should be listed
 and can be called (without hashmark).
+
+To initialise OCaml with batteries I use this file:
+[ocamlinit in OCaml-with-Batteries Repo (Github)](https://github.com/ocaml-batteries-team/batteries-included/blob/master/ocamlinit)
+as ~/.ocamlinit and added the lines
+```
+#use "topfind";;
+#camlp4o;;
+```
+(with hashmarks) to activated the extended syntax support for streams.
+See [Stream Expressions](http://mirror.ocamlcore.org/ocaml-tutorial.org/stream_expressions.html).
+But I think this extended syntax is nowhere to be used here as streams suck anyway.
 
 
 Haskell Notes
