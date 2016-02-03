@@ -21,9 +21,10 @@ You can load files in utop (the OCaml-shell) in the following way:
 Afterwards the functions of the file should be listed
 and can be called (without hashmark).
 
-To initialise OCaml with batteries I use this file:
-[ocamlinit in OCaml-with-Batteries Repo (Github)](https://github.com/ocaml-batteries-team/batteries-included/blob/master/ocamlinit)
-as ~/.ocamlinit and added the lines
+To initialise OCaml with batteries I use the file
+[ocamlinit](https://github.com/ocaml-batteries-team/batteries-included/blob/master/ocamlinit)
+from the OCaml-with-Batteries-Repo (on Github) as ~/.ocamlinit
+and I added additionally the following lines there
 ```
 #use "topfind";;
 #camlp4o;;
