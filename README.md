@@ -47,5 +47,5 @@ You can load files in ghci in the following way:
 ```
 The function of the file aren't listed then,
 so you have to look them up in the source-code.
-They can be started afterwards.
+They can be used afterwards.
 
